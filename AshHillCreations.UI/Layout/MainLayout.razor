@@ -1,0 +1,21 @@
+﻿@using AshHillCreations.UI.Features.Shared
+@using AshHillCreations.UI.Theme
+@inherits LayoutComponentBase
+
+<MudThemeProvider Theme="AshHillCreationsThemes.MudTheme"/>
+<MudPopoverProvider/>
+<MudDialogProvider/>
+<MudSnackbarProvider/>
+
+<MudLayout>
+    <MudMainContent>
+        <PageTitle>Ash Hill Creations, LLC</PageTitle>
+        <MudAppBar>
+            <AppBarComponent/>
+        </MudAppBar>
+        <MudContainer MaxWidth="MaxWidth.ExtraLarge">
+            @Body
+        </MudContainer>
+    </MudMainContent>
+</MudLayout>
+
