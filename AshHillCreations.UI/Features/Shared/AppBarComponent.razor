@@ -1,11 +1,11 @@
 @using AshHillCreations.UI.Constants
 @inherits AshHillCreations.UI.Components.AshHillCreationsComponentBase
 
-<MudAppBar Color="Color.Primary" 
+<MudAppBar Color="Color.Primary"
            WrapContent="true">
     <MudStack Row="true">
         <MudImage Src="Images/Branding/company-logo.png"/>
-        
+
         <MudPaper Width="250px" Class="py-3" Elevation="0">
             <MudNavMenu>
                 <MudNavLink OnClick="@(_ => NavigationManager.NavigateTo(PageNavigation.Home))">
@@ -22,6 +22,6 @@
                 </MudNavLink>
             </MudNavMenu>
         </MudPaper>
-        
+
     </MudStack>
 </MudAppBar>
