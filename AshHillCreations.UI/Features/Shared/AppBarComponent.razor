@@ -1,27 +1,21 @@
 @using AshHillCreations.UI.Constants
 @inherits AshHillCreations.UI.Components.AshHillCreationsComponentBase
 
-<MudAppBar Color="Color.Primary"
-           WrapContent="true">
-    <MudStack Row="true">
-        <MudImage Src="Images/Branding/company-logo.png"/>
-
-        <MudPaper Width="250px" Class="py-3" Elevation="0">
-            <MudNavMenu>
-                <MudNavLink OnClick="@(_ => NavigationManager.NavigateTo(PageNavigation.Home))">
-                    Home
-                </MudNavLink>
-                <MudNavLink OnClick="@(_ => NavigationManager.NavigateTo(PageNavigation.Shop))">
-                    Shop
-                </MudNavLink>
-                <MudNavLink OnClick="@(_ => NavigationManager.NavigateTo(PageNavigation.ContactUs))">
-                    Contact Us
-                </MudNavLink>
-                <MudNavLink OnClick="@(_ => NavigationManager.NavigateTo(PageNavigation.About))">
-                    About
-                </MudNavLink>
-            </MudNavMenu>
-        </MudPaper>
-
+<MudAppBar Color="Color.Primary"  
+           Gutters="false">
+    <MudStack Class="px-4"
+              Row="true">
+        <MudImage Alt="Company Logo"
+                  Class="pt-2"
+                  Height="80" 
+                  Src="Images/Branding/company-logo.svg"
+                  Width="80" />
+        <MudStack AlignItems="AlignItems.Center"
+                  Row="true">
+            <MudLink Color="Color.Secondary" Href="@PageNavigation.Home">Home</MudLink>
+            <MudLink Color="Color.Secondary" Href="@PageNavigation.Shop">Shop</MudLink>
+            <MudLink Color="Color.Secondary" Href="@PageNavigation.ContactUs">Contact Us</MudLink>
+            <MudLink Color="Color.Secondary" Href="@PageNavigation.About">About</MudLink>
+        </MudStack>
     </MudStack>
 </MudAppBar>
